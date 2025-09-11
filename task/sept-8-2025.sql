@@ -55,8 +55,6 @@ update employees set salary=salary+salary*0.10 where department_id=(select depar
 delete from employees where department_id=
 (select department_id from departments where location_id=1800);
 
-
-
 --  16. Insert all HR department employees into a backup_employees table using a subquery in INSERT.
 create table emp as selecT * from employees where department_id in (select department_id from departments where department_name="hr");
 
