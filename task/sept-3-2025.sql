@@ -15,6 +15,8 @@ delimiter ;
 
 select total_amount(100,10);
 
+
+
 select * from employee order by salary desc;
 
 select * from employee order by salary,department;

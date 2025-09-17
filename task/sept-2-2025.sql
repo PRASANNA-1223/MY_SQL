@@ -14,3 +14,5 @@ delimiter ;
 drop function avg_mark;
 
 select avg_mark(1,2,3,4,5);
+
+select * from employees where true=true;
