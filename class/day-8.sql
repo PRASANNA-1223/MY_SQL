@@ -20,7 +20,7 @@ select ntile(3) over (order by mark) from students;
 select replace('salary is bad','bad','good') sentence from dual;
 
 -- 7: Format employee IDs with leading zeros (LPAD) and right padding with stars (RPAD).
-select rpad(lpad(123,5,0),6,'*') demo from dual;
+select rpad(lpad(emp_id,length(emp_id)+1,0),length(lpad(emp_id,length(emp_id)+1,0))+1,'*') star from employees;
 
 -- 8: Extract first 3 letters of employee names.
-select substring(name,2),name from employees;
+select substring(name,1,3),name from employees;
