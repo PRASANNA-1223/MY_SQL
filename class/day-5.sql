@@ -6,3 +6,9 @@ select *  from (select salary as sal from employees order by salary desc limit 4
 
 select max(salary) from employees where salary<
 (select max(salary) from employees);
+
+select * from employees where department_id=10;
+
+select * from departments where department_id=10;
+
+select name,department_name from employees,departments where employees.department_id=departments.department_id;
